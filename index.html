@@ -1,71 +1,257 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Tommy Brunn</title>
-        <meta name="description" content="Personal website of Tommy Brunn - web developer, enthusiast game developer and all-around swell guy.">
-        <meta property="og:title" content="Tommy Brunn">
-        <meta property="og:image" content="http://tommybrunn.com/img/avatar.jpg">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="http://tommybrunn.com">
-        <meta name="og:description" content="Personal website of Tommy Brunn - web developer, enthusiast game developer and all-around swell guy.">
-        <meta name="twitter:card" content="summary">
-        <meta property="twitter:url" content="http://tommybrunn.com">
-        <meta name="twitter:title" content="Tommy Brunn">
-        <meta name="twitter:description" content="Personal website of Tommy Brunn - web developer, enthusiast game developer and all-around swell guy.">
-        <meta property="twitter:image" content="http://tommybrunn.com/img/avatar.jpg">
-        <link rel="shortcut icon" href="favicon.ico"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}</style>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box
+            }
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+            html {
+                -webkit-font-smoothing: antialiased;
+                font-size: 15px;
+                height: 100%;
+                margin: 0
+            }
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+            body {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                color: #384150;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 16px;
+                line-height: 28px;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                margin: 0;
+                min-height: 100vh
+            }
 
+            body ::-moz-selection {
+                color: #4498c8;
+                background-color: #e3eef4;
+                border-radius: 2px
+            }
+
+            body ::selection {
+                color: #4498c8;
+                background-color: #e3eef4;
+                border-radius: 2px
+            }
+
+            .app {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                width: 100%;
+                background-image: linear-gradient(90deg,#b9cbd7 0,#91b7c5);
+            }
+
+            .app-inner {
+                background-color: #fff;
+                box-shadow: 0 1px 8px 0 rgba(0,0,0,.2);
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                -ms-flex-pack: distribute;
+                justify-content: space-around;
+                width: 100%;
+                z-index: 2;
+                position: relative;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center
+            }
+
+            @media (min-width: 961px) {
+                .app-inner {
+                    margin-top:56px;
+                    max-width: 1440px;
+                    width: calc(100% - 180px)
+                }
+            }
+
+            .content {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                max-width: 700px;
+                padding: 84px 0;
+                width: 100%
+            }
+
+            @media (max-width: 768px) {
+                .content {
+                    max-width:600px;
+                    padding: 1.3333rem;
+                    margin: 0 auto
+                }
+            }
+
+            .intro {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                margin-top: 128px;
+                margin-bottom: 84px
+            }
+
+            .intro h1 {
+                color: #2e394d;
+                font-size: 24px;
+                font-weight: 300;
+                letter-spacing: .2px;
+                text-rendering: optimizeLegibility;
+                -webkit-font-smoothing: subpixel-antialiased;
+                line-height: 1.5em;
+                margin-bottom: 0;
+            }
+
+            nav {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                position: relative;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                font-size: 18px;
+                font-weight: 300;
+            }
+
+            @media (max-width: 480px) {
+                nav {
+                    margin-top:2.6666rem
+                }
+            }
+
+            @media (max-width: 480px) {
+                .links {
+                    display:-webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap
+                }
+            }
+
+            nav .links a:not(:last-of-type) {
+                margin-right: 40px
+            }
+
+            .links:last-child {
+                margin-left: auto
+            }
+
+            @media (max-width: 480px) {
+                .links:last-child {
+                    margin-left:0
+                }
+            }
+
+            a {
+                color: #2e394d;
+                text-decoration: none;
+                background: none;
+                position: relative;
+            }
+
+            a:hover {
+                color: #2e394d;
+            }
+
+            a:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: -2px;
+                left: 0;
+                background-color: #91b7c5;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                transition: all 0.2s ease-in-out 0s;
+            }
+
+            a:hover:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+        </style>
     </head>
     <body>
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title"><a href="/">Tommy Brunn</a></h1>
-                <nav>
-                    <ul>
-                        <li><a href="https://plus.google.com/108728447943307421833?rel=author" rel="me"><i class="icon-google-plus-sign icon-large"></i> Google+</a></li>
-                        <li><a href="https://github.com/Nevon"><i class="icon-github icon-large"></i> Github</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <div class="app">
+            <main class="app-inner">
+                <div class="content">
+                    <nav>
+                        <div class="links">
+                            <a href="https://github.com/Nevon">Code</a>
+                            <a href="https://medium.com/@brunn">Articles</a>
+                            <a href="https://www.linkedin.com/in/tommybrunn/">Resume</a>
+                        </div>
+                    </nav>
+                    <article>
+                        <section class="intro">
+                            <h1>Tommy Brunn is a software developer in Stockholm, Sweden.<br/>Currently simplifying buying at <a href="https://klarna.com">Klarna</a>.</h1>
+                        </section>
+                    </article>
+                </div>
+            </main>
         </div>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <div class="main-container">
-            <div class="main clearfix">
-
-                <img src="img/avatar.jpg" width="230" height="230" alt="My face" class="avatar">
-
-                <h1>Hi,<wbr> I'm Tommy Brunn</h1>
-                <p>I fiddle with bits at <a href="http://shopping.blocket.se/">Blocket</a>.<br>Want to know more? Hit me up on <a href="https://plus.google.com/108728447943307421833" rel="me">Google+</a></p>
-
-            </div>
-        </div>
-
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-17119489-1']);
-            _gaq.push(['_setDomainName', 'tommybrunn.com']);
-            _gaq.push(['_trackPageview']);
-    
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-    
+            ga('create', 'UA-17119489-1', 'auto');
+            ga('send', 'pageview');
         </script>
     </body>
 </html>
